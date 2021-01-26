@@ -1,0 +1,12 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="Navigate Pages" icon=""></ActionBar>
+    <GridLayout columns="*, *" rows="2*, *, * , *, *" style="margin:10px">
+        <Label text="Second Page" row="0" col="0" colSpan="2" class="h1 text-center"/>
+        <Label text="From Main:" row="1" col="0" class="h2 text-left" textWrap="true"/>
+        <Label text="Her.." id="txtFromMain" row="1" col="1" class="h2 text-left" textWrap="true"/>
+         <Label text="To Main:" row="2" col="0" class="h2 text-left" textWrap="true"/>
+         <TextField id="txtToMain" hint="Skriv her til Second" row="2" col="1" class="h2 text-left"/>
+
+     <Button text="Go to Main" row="3" col="0" colSpan="2" tap="{{ onTap }}" class="-primary"/>
+    </GridLayout>
+</Page>
