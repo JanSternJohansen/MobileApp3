@@ -10,3 +10,8 @@ export function navigatingTo(args: EventData)
 
     page.bindingContext = new MyObservable(names);
 }
+
+export function onItemPressed(args: EventData)
+{
+    
+}

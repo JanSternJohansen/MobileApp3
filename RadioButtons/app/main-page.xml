@@ -1,18 +1,18 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
-    <ActionBar title="My Radio App" icon=""></ActionBar>
+    <ActionBar title="My Radio  App noget" icon=""></ActionBar>
 
     <StackLayout class="p-20">
         <Label text="Tryk på et navn" class="h1 text-center"/>
-        <SegmentedBar selectedIndex="{{selectedIndex}}" style="background-color:#FF00FF">
+        <SegmentedBar selectedIndex="{{selectedIndex}}" selectedBackgroundColor="blue" style="font-size:20px; background-color:#FFFF8888">
             <SegmentedBar.items>
-                <SegmentedBarItem title="Viktor"/>
-                <SegmentedBarItem title="Mikkel"/>
+                <SegmentedBarItem title="Vik" />
+                <SegmentedBarItem title="Mik"/>
                 <SegmentedBarItem title="Ali"/>
-                <SegmentedBarItem title="Nicklas"/>
+                <SegmentedBarItem title="Nic"/>
             </SegmentedBar.items>
         </SegmentedBar>
 
-
+        <Switch checked="{{}}" backgroundColor="red" offBackgroundColor="yellow"/>
         <Button text="TAP" tap="{{ onTap }}" class="-primary"/>
         <Label text="{{ name }}" class="h2 text-center" textWrap="true"/>
     </StackLayout>
