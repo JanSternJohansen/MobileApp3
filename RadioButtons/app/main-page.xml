@@ -1,0 +1,19 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="My Radio App" icon=""></ActionBar>
+
+    <StackLayout class="p-20">
+        <Label text="Tryk på et navn" class="h1 text-center"/>
+        <SegmentedBar selectedIndex="{{selectedIndex}}" style="background-color:#FF00FF">
+            <SegmentedBar.items>
+                <SegmentedBarItem title="Viktor"/>
+                <SegmentedBarItem title="Mikkel"/>
+                <SegmentedBarItem title="Ali"/>
+                <SegmentedBarItem title="Nicklas"/>
+            </SegmentedBar.items>
+        </SegmentedBar>
+
+
+        <Button text="TAP" tap="{{ onTap }}" class="-primary"/>
+        <Label text="{{ name }}" class="h2 text-center" textWrap="true"/>
+    </StackLayout>
+</Page>
