@@ -1,0 +1,23 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="My List Names" icon=""></ActionBar>
+
+    <StackLayout class="p-20">
+        
+        <Label text="List of names" class="h1 text-center"/>
+        <TextField text="{{ newName }}" returnKeyType="send" returnPress="{{ addItem }}" style="font-size:20px"/>
+        <ScrollView orientation="vertical" >
+        <Repeater items="{{ items }}">
+           <Repeater.itemTemplate>
+              <StackLayout orientation="vertical">
+                 <StackLayout style="background-color:blue; height:2px" />
+                 <Label text="{{name}}" style="font-size:25px"/>
+                  <Label text="{{id}}" style="font-size:25px"/>
+              </StackLayout>
+           </Repeater.itemTemplate>
+        </Repeater>
+        </ScrollView>
+
+      
+        <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+    </StackLayout>
+</Page>
